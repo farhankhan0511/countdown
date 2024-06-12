@@ -1,0 +1,108 @@
+body {
+    background: url("https://images-origin.wallwiz.link/58860ebfbcf65400017a5514") no-repeat center center fixed;
+    background-size: cover; 
+}
+.pomodoro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;  
+    padding-top: 15px;
+    padding-bottom: 25px;  
+}
+p {
+    text-align: center;
+}
+.flip-clock-wrapper {
+    max-width: 460px;
+    margin: 3em auto 2em;
+    display: flex;
+    justify-content: center;
+}
+.col-md-4 {
+    display: flex;
+    justify-content: center;
+}
+.col-md-4 #session, .col-md-4 #break {
+    display: flex;
+    justify-content: center;
+    height: 34px;
+    align-items: center;
+}
+.counter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.clock {
+    margin-top: 30px;
+}
+.container {
+    width: 500px;
+}
+.middle {
+    display: inline-block;
+}
+#btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.btn {
+    background-color: #333333;
+    color: #CCCCCC;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.btn:hover {
+    background-color: #FFFFFF;
+    color: #333333;
+}
+#sessInc, #sessDec, #breakInc, #breakDec {  
+    font-weight: bold;
+}
+#stats {
+    background-color: #333333;
+    width: 220px;
+    height: 70px;  
+    border-radius: 10px;
+    color: #CCCCCC;
+    font-size: 45px;
+    text-align: center;
+}
+#statRow {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* FlipClock styles override */
+.flip-clock-wrapper ul {
+    background: none;
+    box-shadow: none;
+}
+
+.flip-clock-wrapper ul li a div div.inn, 
+.flip-clock-wrapper ul li a div div.inn:before, 
+.flip-clock-wrapper ul li a div div.inn:after {
+    background-color: #333;
+    border: none;
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+    box-shadow: none;
+}
+
+.flip-clock-wrapper ul li a div.up:after {
+    top: 0;
+    height: 100%;
+}
+
+.flip-clock-wrapper ul li a div.down:after {
+    bottom: 0;
+    height: 100%;
+}
